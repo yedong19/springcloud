@@ -7,3 +7,11 @@ spring:
         service-name: order-client
 server:
   port: 8008
+feign:
+  hystrix:
+    enable: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
